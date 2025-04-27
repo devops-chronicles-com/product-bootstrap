@@ -1,0 +1,17 @@
+# products/inventory-service.yaml
+
+product: inventory-service
+team: platform
+cloud:
+  providers:
+    - aws
+    - azure
+  aws_region: us-west-2
+  azure_location: westus2
+environments:
+  - name: dev
+  - name: uat
+  - name: prd
+template:
+  repo_owner: your-org
+  repo_template: terraform-product-template
